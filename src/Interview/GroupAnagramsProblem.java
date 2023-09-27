@@ -14,7 +14,7 @@ Output: [["bat"],["nat","Tan"],["ate","Eat","Tea"]]
 * */
 import java.util.*;
 
-public class Test {
+public class GroupAnagramsProblem {
 
     private static String process(String word){
 

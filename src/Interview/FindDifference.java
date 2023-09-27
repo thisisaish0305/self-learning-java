@@ -4,8 +4,9 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-class Solution {
-    public List<List<Integer>> findDifference(int[] nums1, int[] nums2) {
+// https://leetcode.com/problems/find-the-difference-of-two-arrays/description/
+class findDifference {
+    public List<List<Integer>> findDifferenceMethod(int[] nums1, int[] nums2) {
         List<List<Integer>> result = new ArrayList<>();
         HashMap<Integer,Boolean> numsOneMap = new HashMap<>();
         HashMap<Integer,Boolean> numsTwoMap = new HashMap<>();
