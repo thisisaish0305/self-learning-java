@@ -1,4 +1,4 @@
-package Interview;
+package DSAQuestions;
 
 public class ReturnKeypadCode {
 

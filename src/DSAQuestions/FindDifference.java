@@ -1,4 +1,4 @@
-package Interview;
+package DSAQuestions;
 
 import java.util.ArrayList;
 import java.util.HashMap;

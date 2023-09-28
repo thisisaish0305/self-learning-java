@@ -1,4 +1,4 @@
-package Interview;
+package DSAQuestions;
 
 /*
 * [1:46 PM] Abhishek Saxena

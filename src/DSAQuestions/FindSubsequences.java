@@ -1,4 +1,4 @@
-package Interview;
+package DSAQuestions;
 
 /*
 * I/P: "xyz" // n length string.
