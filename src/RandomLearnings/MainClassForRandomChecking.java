@@ -10,12 +10,14 @@ public class MainClassForRandomChecking {
         }
     }
 
-    private static void modify(String s){
+    private static String modify(String s){
         s+=" Aish";
-        System.out.println(s);
+        return s;
     }
 
     public static void main(String[] args) {
+
+
         int [] arr ={10,20,30,40};
         increment(arr);
         for(int i=0; i<arr.length;i++){
@@ -23,7 +25,7 @@ public class MainClassForRandomChecking {
         }
 
         String s = "hey";
-        modify(s);
+        s= modify(s);
         System.out.println(s);
     }
 }

@@ -7,7 +7,7 @@ import java.util.TreeSet;
 
 public class LongestConsecutive {
 
-    //can do better by using map as value is actually not needed.
+    //can do better by using set as value is actually not needed.
     public int longestConsecutive(int[] nums) {
         TreeMap<Integer, Boolean> map = new TreeMap<>();
         for(int num: nums){
