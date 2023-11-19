@@ -3,13 +3,30 @@ package DSAQuestions.LinkedList;
 public class KReverseIterative {
 }
 
-class Pair{
-    public Node first;
-    public Node second;
-    Pair(){
+/*
+
+    Following is the Node class already written for the Linked List
+
+    class Node<T> {
+        T data;
+        Node<T> next;
+
+        public Node(T data) {
+            this.data = data;
+        }
     }
-}
- class Solution {
+
+*/
+
+
+class Solution {
+
+    static class Pair{
+        public Node first;
+        public Node second;
+        Pair(){
+        }
+    }
     private static Pair reverse(Node<Integer> head){
         Pair headTail = new Pair();
         Node<Integer> prev=null,curr,next=null;
@@ -67,6 +84,11 @@ class Pair{
             }
         }
         return newHead;
+    }
+
+    public static void main(String[] args) {
+        reverse(null);
+        Pair p = new Pair();
     }
 
 }
