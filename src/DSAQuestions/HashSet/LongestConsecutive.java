@@ -1,15 +1,12 @@
 package DSAQuestions.HashSet;
 
-import java.util.HashSet;
-import java.util.Set;
-import java.util.TreeMap;
-import java.util.TreeSet;
+import java.util.*;
 
 public class LongestConsecutive {
 
     //can do better by using set as value is actually not needed.
     public int longestConsecutive(int[] nums) {
-        TreeMap<Integer, Boolean> map = new TreeMap<>();
+        Map<Integer, Boolean> map = new HashMap<>();
         for(int num: nums){
             map.put(num, true);
         }

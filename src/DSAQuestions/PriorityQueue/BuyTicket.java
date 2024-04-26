@@ -12,7 +12,7 @@ public class BuyTicket {
     }
 }
 
-class Pair {
+class Pair<I extends Number, I1 extends Number> {
     int value;
     int index;
 
@@ -22,9 +22,9 @@ class Pair {
     }
 }
 
-class ValueComparator implements Comparator<Pair>{
+class ValueComparator implements Comparator<Pair<Number, Number>>{
     @Override
-    public int compare(Pair o1, Pair o2) {
+    public int compare(Pair<Number, Number> o1, Pair<Number, Number> o2) {
         return o2.value - o1.value; // max pq
     }
 }
@@ -32,15 +32,15 @@ class Solution {
 
     public static int buyTicket(int input[], int k) {
         ValueComparator valueComparator = new ValueComparator();
-        PriorityQueue<Pair> pq = new PriorityQueue<Pair>(valueComparator);
+        PriorityQueue<Pair<Number, Number>> pq = new PriorityQueue<Pair<Number, Number>>(valueComparator);
         int i=0;
         while( i < input.length){
-            pq.add(new Pair(input[i],i)); i++;
+            pq.add(new Pair<Number, Number>(input[i],i)); i++;
         }
         int index = -1; int ans =0;
 
         while(index!=k){
-            Pair top = pq.remove();
+            Pair<Number, Number> top = pq.remove();
             System.out.println("val:"+top.value + " indx:" + top.index);
             ans +=1;
             if(top.index==k){

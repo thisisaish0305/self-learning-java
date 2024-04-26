@@ -11,6 +11,8 @@ private static void kSortedArray(int[] arr, int k){
     for(; i < k; i++) {
         pq.add(arr[i]);
     }
+
+
     int startIndex = 0;
     while(i < arr.length) {
         arr[startIndex] = pq.remove();

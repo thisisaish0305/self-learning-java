@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class SubsetsSumToK {
 
+
     /*
     *
 when you k==0 and si is equal to the length in that case result will have one row,

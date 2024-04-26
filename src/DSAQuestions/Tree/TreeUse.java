@@ -1,6 +1,11 @@
 package DSAQuestions.Tree;
 
+
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
+
+
 
 public class TreeUse {
 
@@ -31,7 +36,8 @@ public class TreeUse {
   }
 
     public static void main(String[] args) {
-      Scanner s = new Scanner(System.in);
+        //Pair<TreeNode, Pair<Integer,Integer>> p = new Pair<TreeNode,Pair<Integer,Integer>>();
+        Scanner s = new Scanner(System.in);
         TreeNode<Integer> root = takeInput(s);
         System.out.println();
         print(root);

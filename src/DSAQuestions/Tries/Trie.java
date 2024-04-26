@@ -1,5 +1,3 @@
-package DSAQuestions.Tries;
-
 
 class TrieNode{
 
@@ -29,21 +27,21 @@ public class Trie {
     }
 
     private boolean search(TrieNode root, String word) {
-        // implement this function
-        if(word.length()==0 && root.isTerminating==true){
-            return true;
+        if(root==null){
+            return false;
         }
-            char ch = word.charAt(0);
-            int charIndex = ch - 'a';
-            TrieNode[] children = root.children;
-            TrieNode child = children[charIndex];
 
-            if(child==null){
-                return false;
-            } else {
-                search(child, word.substring(1));
-            }
-        return false;
+        char ch = word.charAt(0);
+        int charIndex = ch +'0';
+        TrieNode[] children = root.children;
+        if(children[charIndex]!=null){
+            //recursion
+            TrieNode child = children[charIndex];
+            search(child, word.substring(1));
+        }else {
+            return false;
+        }
+        return true;
     }
 
     private void add(TrieNode root, String word){

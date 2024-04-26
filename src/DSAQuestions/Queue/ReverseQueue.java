@@ -1,7 +1,6 @@
 package DSAQuestions.Queue;
 
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.*;
 
 class Solution {
 
@@ -23,6 +22,18 @@ class Solution {
 
 public class ReverseQueue {
     public static void main(String[] args) {
-        Solution.reverseQueue(new LinkedList<>());
+
+        List<Integer> l= new ArrayList<Integer>();
+        l.add(10); l.add(20);l.add(30);
+//        l.remove(l.size()-1);
+        l.remove(l.get(l.size()-1));
+        for(int a:l)
+            System.out.println(a);
+        int[][] dp = new int[5][6];
+        for(int[] row: dp) {
+            Arrays.fill(row, -1);
+        }
+
+        //Solution.reverseQueue(new LinkedList<>());
     }
 }
